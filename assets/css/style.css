@@ -1,0 +1,111 @@
+* {
+  border: 1px solid grey;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  z-index: -1;
+}
+.card {
+  max-width: 350px;
+  min-width: 300px;
+  height: 400px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  box-shadow: 4px 4px 4px grey;
+  border-radius: 8px;
+}
+.thumbnail {
+  width: 100%;
+  height: 50%;
+}
+.thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.about {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about span {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.discount {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(237, 225, 209, 0.697);
+  height: 35px;
+  width: 80px;
+}
+.pic {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 25%;
+  right: 20px;
+  color: rgb(158, 8, 8);
+  border: transparent;
+  background-color: rgba(237, 225, 209, 0.379);
+  height: 35px;
+  width: 80px;
+}
+.desc {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.section {
+  display: none;
+}
+.sectionV {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(115, 114, 114, 0.841);
+  backdrop-filter: blur(1px);
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+.previewimg {
+  width: 80%;
+  height: 500px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fullimg {
+  width: 31%;
+  height: 90%;
+}
+.fullimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
